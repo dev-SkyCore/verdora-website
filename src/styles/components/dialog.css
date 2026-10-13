@@ -1,0 +1,104 @@
+.dialog {
+  inline-size: min(34rem, calc(100% - 2rem));
+  max-block-size: calc(100dvh - 2rem);
+  padding-block: 3rem 1.5rem;
+  padding-inline: 1.5rem;
+  border: 1px solid var(--color-green);
+  border-radius: 0.25rem;
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+.dialog::backdrop {
+  background: #303c3070;
+}
+.dialog[open] {
+  animation: dialog-enter var(--motion-hover-duration) var(--motion-hover-easing) both;
+}
+.dialog[open]::backdrop {
+  animation: dialog-backdrop-enter var(--motion-hover-duration) var(--motion-hover-easing) both;
+}
+.dialog[data-state='closing'] {
+  animation: dialog-exit 240ms ease-in both;
+}
+.dialog[data-state='closing']::backdrop {
+  animation: dialog-backdrop-exit 240ms ease-in both;
+}
+.dialog__close {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inline-size: 3rem;
+  block-size: 3rem;
+  padding: 0;
+}
+.dialog__close::before {
+  content: '';
+  position: absolute;
+  inset: 0.75rem;
+  border-radius: var(--radius);
+  background: transparent;
+  transition: background-color var(--motion-hover-duration) var(--motion-hover-easing);
+  pointer-events: none;
+}
+.dialog__close .icon {
+  position: relative;
+}
+@media (hover: hover) {
+  .dialog__close:hover {
+    background: transparent;
+  }
+  .dialog__close:hover::before {
+    background: var(--color-cream);
+  }
+}
+.dialog__title {
+  font-family: var(--font-display);
+  font-size: 1.5625rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.dialog__copy {
+  margin-block: 1.25rem;
+}
+.dialog__image {
+  inline-size: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  margin-block-end: 1.5rem;
+}
+@keyframes dialog-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes dialog-exit {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.985);
+  }
+}
+@keyframes dialog-backdrop-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes dialog-backdrop-exit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

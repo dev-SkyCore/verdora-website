@@ -1,0 +1,12 @@
+@import '../fonts/fonts.css';
+@import './variables.css';
+@import './global.css';
+@import './components/common.css';
+@import './components/header.css';
+@import './components/hero.css';
+@import './components/benefits.css';
+@import './components/about.css';
+@import './components/categories.css';
+@import './components/contacts.css';
+@import './components/footer.css';
+@import './components/dialog.css';

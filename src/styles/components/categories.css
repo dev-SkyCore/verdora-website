@@ -1,0 +1,119 @@
+.categories {
+  padding-block: 1.9375rem 2rem;
+  padding-inline: 1.25rem;
+}
+.categories__title {
+  font-family: var(--font-display);
+  font-size: 1.5625rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+.categories .divider {
+  margin-block-start: 0.9375rem;
+}
+.categories__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 1rem;
+  margin-block-start: 1.5rem;
+}
+.category {
+  min-inline-size: 0;
+}
+.category__title {
+  font-size: inherit;
+  font-weight: 400;
+}
+.category__link {
+  display: block;
+  text-decoration: none;
+}
+.category__image {
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 167 / 188;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  transition: filter var(--motion-hover-duration) var(--motion-hover-easing);
+}
+.category__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-block-size: 2.75rem;
+  margin-block-start: -1.125rem;
+  margin-inline: 0.375rem;
+  padding: 0.5rem 0.25rem;
+  border-radius: var(--radius);
+  background: var(--color-green);
+  color: var(--color-white);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  transition: background-color var(--motion-hover-duration) var(--motion-hover-easing);
+}
+.category__link:focus-visible .category__label {
+  background: var(--color-ink);
+}
+@media (hover: hover) {
+  .category__link:hover .category__label {
+    background: var(--color-ink);
+  }
+  .category__link:hover .category__image {
+    filter: brightness(0.94);
+  }
+}
+.category__description {
+  margin-block-start: 0.9375rem;
+  color: var(--color-muted);
+  font-size: var(--text-tiny);
+  line-height: 1.45;
+  text-align: center;
+}
+@media (min-width: 40rem) {
+  .categories {
+    padding-inline: 2rem;
+    padding-block-end: 2.5rem;
+  }
+  .categories__title {
+    font-size: 2.125rem;
+  }
+  .categories__grid {
+    gap: 2rem 1.5rem;
+  }
+  .category__image {
+    aspect-ratio: 340 / 300;
+  }
+  .category__label {
+    margin-inline: 0.75rem;
+    font-size: var(--text-small);
+  }
+  .category__description {
+    font-size: var(--text-caption);
+  }
+}
+@media (min-width: 64rem) {
+  .categories {
+    padding-inline: 2.5rem;
+    padding-block-end: 2rem;
+  }
+  .categories__title {
+    font-size: 2.25rem;
+  }
+  .categories__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .category__image {
+    aspect-ratio: 322 / 258;
+  }
+  .category__label {
+    margin-inline: 1rem;
+    min-block-size: 3rem;
+  }
+  .category__description {
+    font-size: var(--text-tiny);
+  }
+}

@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="VERDORA — естественные ритуалы для себя и своего дома. Уход за телом, ароматы, средства для лица и полезные аксессуары."
+    />
+    <meta name="theme-color" content="#4c5946" />
+    <title>VERDORA — природа, забота, ты</title>
+    <link rel="canonical" href="__SITE_URL__/" />
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64 128x128 256x256" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="VERDORA" />
+    <meta property="og:title" content="VERDORA — природа, забота, ты" />
+    <meta
+      property="og:description"
+      content="Естественные ритуалы для себя и своего дома. Уход, ароматы и маленькие детали большой заботы."
+    />
+    <meta property="og:url" content="__SITE_URL__/" />
+    <meta property="og:image" content="__SITE_URL__/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Логотип VERDORA из двух листьев на молочном фоне. Природа. Забота. Ты."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VERDORA — природа, забота, ты" />
+    <meta name="twitter:description" content="Естественные ритуалы для себя и своего дома." />
+    <meta name="twitter:image" content="__SITE_URL__/og-image.png" />
+    <meta
+      name="twitter:image:alt"
+      content="VERDORA — природа, забота, ты. Фирменный знак из двух листьев."
+    />
+    <link
+      rel="preload"
+      href="/src/fonts/prata-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <script type="module" src="/src/scripts/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="logo" viewBox="0 0 100 100">
+        <path
+          class="logo__leaf"
+          d="M12 12C36 14 49 31 50 83C26 75 13 53 12 12Z M88 12C64 14 51 31 50 83C74 75 87 53 88 12Z"
+        />
+        <path class="logo__vein" d="M24 29C34 45 43 63 50 83C57 63 66 45 76 29" />
+      </symbol>
+      <symbol id="menu" viewBox="0 0 48 48"><path d="M7 12h34 M7 24h34 M7 36h34" /></symbol>
+      <symbol id="heart" viewBox="0 0 48 48">
+        <path d="M24 40 7 24C-3 9 13 1 24 14C35 1 51 9 41 24Z" />
+      </symbol>
+      <symbol id="recycle" viewBox="0 0 48 48">
+        <path
+          d="m16 8 8-5 8 13 M24 3l-1 12 M39 23l5 9-7 10H23 M44 32l-12-3 M14 41H5L1 29l8-13 M5 41l5-11"
+        />
+      </symbol>
+      <symbol id="truck" viewBox="0 0 48 48">
+        <path d="M3 12h25v23H3z M28 21h9l8 9v5H28 M34 21v9h11" />
+        <circle cx="12" cy="36" r="5" />
+        <circle cx="36" cy="36" r="5" />
+      </symbol>
+      <symbol id="lock" viewBox="0 0 48 48">
+        <rect x="10" y="19" width="28" height="25" rx="2" />
+        <path d="M16 19v-8a8 8 0 0 1 16 0v8 M24 29v7" />
+      </symbol>
+      <symbol id="social" viewBox="0 0 48 48">
+        <rect x="5" y="5" width="38" height="38" rx="11" />
+        <circle cx="24" cy="24" r="9" />
+        <circle cx="35" cy="13" r="1" />
+      </symbol>
+      <symbol id="close" viewBox="0 0 48 48"><path d="m12 12 24 24 M36 12 12 36" /></symbol>
+    </svg>
+
+    <header class="header" data-header>
+      <a class="header__brand" href="#main" lang="en" aria-label="VERDORA — на главную">VERDORA</a>
+      <nav
+        class="header__navigation"
+        id="navigation"
+        aria-label="Основная навигация"
+        data-navigation
+      >
+        <ul class="header__links">
+          <li>
+            <a class="header__link animated-link animated-link--navigation" href="#body-care"
+              >Уход за телом</a
+            >
+          </li>
+          <li>
+            <a class="header__link animated-link animated-link--navigation" href="#home-fragrance"
+              >Дом и ароматы</a
+            >
+          </li>
+          <li>
+            <a class="header__link animated-link animated-link--navigation" href="#face-care"
+              >Уход за лицом</a
+            >
+          </li>
+          <li>
+            <a class="header__link animated-link animated-link--navigation" href="#about"
+              >О бренде</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button
+          class="icon-button header__menu"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="navigation"
+          data-menu-toggle
+        >
+          <svg class="icon" aria-hidden="true"><use href="#menu" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="brand-title">
+        <div class="hero__content">
+          <svg class="logo hero__logo" aria-hidden="true"><use href="#logo" /></svg>
+          <h1 class="hero__title" id="brand-title" lang="en">VERDORA</h1>
+          <p class="hero__tagline">ПРИРОДА. ЗАБОТА. ТЫ.</p>
+          <div class="divider" aria-hidden="true">
+            <svg class="logo divider__logo"><use href="#logo" /></svg>
+          </div>
+          <p class="hero__description">Естественные ритуалы<br />для себя и своего дома</p>
+          <a class="button hero__button" href="#categories">ОТКРЫТЬ КАТАЛОГ</a>
+        </div>
+        <div class="hero__media">
+          <img
+            class="hero__image"
+            src="/src/images/hero-main.jpg"
+            alt="Флакон VERDORA, свеча, керамическая ваза с зеленью, полотенце и деревянная щётка"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="benefits" aria-label="Наш подход">
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <svg class="logo logo--light benefits__icon" aria-hidden="true">
+              <use href="#logo" /></svg
+            ><span>Натуральные<br />ингредиенты</span>
+          </li>
+          <li class="benefits__item">
+            <svg class="icon benefits__icon" aria-hidden="true"><use href="#heart" /></svg
+            ><span>Забота</span>
+          </li>
+          <li class="benefits__item">
+            <svg class="icon benefits__icon" aria-hidden="true"><use href="#recycle" /></svg
+            ><span>Бережная<br />упаковка</span>
+          </li>
+          <li class="benefits__item">
+            <svg class="icon benefits__icon" aria-hidden="true"><use href="#truck" /></svg
+            ><span>Доставка<br />с заботой</span>
+          </li>
+          <li class="benefits__item">
+            <svg class="icon benefits__icon" aria-hidden="true"><use href="#lock" /></svg
+            ><span>Безопасная<br />оплата</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about__content">
+          <h2 class="about__title" id="about-title">
+            Красота и забота,<br />вдохновлённые природой
+          </h2>
+          <div class="about__copy">
+            <p>
+              VERDORA — простые ритуалы, которые делают каждый день чуть теплее. Мы выбираем
+              средства для тела, ароматы для дома и полезные мелочи с вниманием к составам,
+              материалам и деталям.
+            </p>
+            <p>Для твоего спокойствия. Для уюта дома.<br />С заботой о мире вокруг.</p>
+          </div>
+          <a class="button about__button" href="#categories">ВЫБРАТЬ СВОЙ РИТУАЛ</a>
+        </div>
+        <img
+          class="about__image"
+          src="/src/images/packaging-large.jpg"
+          alt="Открытая крафтовая коробка VERDORA с флаконом, мылом и ботанической карточкой"
+          loading="lazy"
+          decoding="async"
+        />
+      </section>
+
+      <section class="categories" id="categories" aria-labelledby="categories-title">
+        <h2 class="categories__title" id="categories-title">Найди свой ритуал</h2>
+        <div class="divider divider--light" aria-hidden="true">
+          <svg class="logo divider__logo"><use href="#logo" /></svg>
+        </div>
+        <div class="categories__grid">
+          <article class="category" id="body-care">
+            <h3 class="category__title">
+              <a
+                class="category__link"
+                href="#body-care"
+                data-category="body"
+                aria-haspopup="dialog"
+                ><img
+                  class="category__image"
+                  src="/src/images/body-large.jpg"
+                  srcset="/src/images/body-small.jpg 512w, /src/images/body-large.jpg 1254w"
+                  sizes="(min-width: 64rem) 23vw, 45vw"
+                  alt="Янтарный флакон ухода за телом и деревянная щётка"
+                  loading="lazy"
+                  decoding="async"
+                /><span class="category__label">ТЕЛО И УХОД</span></a
+              >
+            </h3>
+            <p class="category__description">Мягкость в каждом прикосновении</p>
+          </article>
+          <article class="category" id="home-fragrance">
+            <h3 class="category__title">
+              <a
+                class="category__link"
+                href="#home-fragrance"
+                data-category="candle"
+                aria-haspopup="dialog"
+                ><img
+                  class="category__image"
+                  src="/src/images/candle-large.jpg"
+                  srcset="/src/images/candle-small.jpg 512w, /src/images/candle-large.jpg 1254w"
+                  sizes="(min-width: 64rem) 23vw, 45vw"
+                  alt="Зажжённая свеча VERDORA на тёплом камне"
+                  loading="lazy"
+                  decoding="async"
+                /><span class="category__label">ДОМ И АРОМАТЫ</span></a
+              >
+            </h3>
+            <p class="category__description">Уют, который хочется сохранить</p>
+          </article>
+          <article class="category" id="face-care">
+            <h3 class="category__title">
+              <a
+                class="category__link"
+                href="#face-care"
+                data-category="face"
+                aria-haspopup="dialog"
+                ><img
+                  class="category__image"
+                  src="/src/images/face-large.jpg"
+                  srcset="/src/images/face-small.jpg 512w, /src/images/face-large.jpg 1254w"
+                  sizes="(min-width: 64rem) 23vw, 45vw"
+                  alt="Сыворотка во флаконе с пипеткой на каменной подставке"
+                  loading="lazy"
+                  decoding="async"
+                /><span class="category__label">УХОД ЗА ЛИЦОМ</span></a
+              >
+            </h3>
+            <p class="category__description">Время уделить внимание себе</p>
+          </article>
+          <article class="category" id="accessories">
+            <h3 class="category__title">
+              <a
+                class="category__link"
+                href="#accessories"
+                data-category="accessories"
+                aria-haspopup="dialog"
+                ><img
+                  class="category__image"
+                  src="/src/images/accessories-large.jpg"
+                  srcset="
+                    /src/images/accessories-small.jpg  512w,
+                    /src/images/accessories-large.jpg 1254w
+                  "
+                  sizes="(min-width: 64rem) 23vw, 45vw"
+                  alt="Хлопковая сетчатая сумка с полотенцем, мешочком и зеленью"
+                  loading="lazy"
+                  decoding="async"
+                /><span class="category__label">АКСЕССУАРЫ</span></a
+              >
+            </h3>
+            <p class="category__description">Маленькие детали большой заботы</p>
+          </article>
+        </div>
+      </section>
+      <section class="contacts" aria-label="Контактная информация">
+        <div class="contacts__content">
+          <div class="contacts__values">
+            <div class="contacts__value">
+              <svg class="logo logo--light contacts__logo" aria-hidden="true">
+                <use href="#logo" />
+              </svg>
+              <div>
+                <h2 class="contacts__value-title">ОСОЗНАННЫЙ ВЫБОР</h2>
+                <p class="contacts__value-copy">
+                  Для тебя. Для дома.<br />Для мира, в котором мы живём.
+                </p>
+              </div>
+            </div>
+            <p class="contacts__motto">Природа рядом.<br />Забота начинается с малого.</p>
+          </div>
+          <section class="newsletter" aria-labelledby="newsletter-title">
+            <h2 class="newsletter__title" id="newsletter-title">Письма с заботой о тебе</h2>
+            <p class="newsletter__description">
+              Новые ритуалы, полезные советы и скидка 10%<br class="newsletter__desktop-break" />
+              на первый заказ — в нашей рассылке.
+            </p>
+            <form class="newsletter__form" data-newsletter>
+              <label class="newsletter__label" for="email">Твой email</label>
+              <input
+                class="newsletter__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ваш email"
+                autocomplete="email"
+                required
+                aria-describedby="newsletter-note newsletter-status"
+              />
+              <button class="button button--light newsletter__submit" type="submit" disabled>
+                ПОДПИСАТЬСЯ
+              </button>
+            </form>
+            <noscript
+              ><p class="newsletter__note">
+                Для проверки email включи JavaScript. В этой версии отправка рассылки недоступна.
+              </p></noscript
+            >
+            <p class="newsletter__note" id="newsletter-note">
+              Нажимая «Подписаться», ты соглашаешься<br />
+              с
+              <button
+                class="text-button animated-link"
+                type="button"
+                data-open-dialog="privacy-dialog"
+              >
+                политикой конфиденциальности</button
+              >.
+            </p>
+            <p
+              class="newsletter__status"
+              id="newsletter-status"
+              role="status"
+              data-newsletter-status
+            ></p>
+          </section>
+          <div class="contacts__details">
+            <div class="contacts__social">
+              <svg class="icon" aria-hidden="true"><use href="#social" /></svg>
+              <div>
+                <p class="contacts__social-title">БУДЕМ БЛИЖЕ</p>
+                <span>@verdora</span>
+              </div>
+            </div>
+            <address class="contacts__address">
+              <a class="animated-link" href="mailto:hello@verdora.example">hello@verdora.example</a>
+            </address>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p>© VERDORA, 2026</p>
+        <button class="text-button animated-link" type="button" data-open-dialog="privacy-dialog">
+          Политика конфиденциальности
+        </button>
+      </div>
+    </footer>
+
+    <dialog class="dialog" id="category-dialog" aria-labelledby="category-dialog-title">
+      <button
+        class="icon-button dialog__close"
+        type="button"
+        aria-label="Закрыть категорию"
+        data-close-dialog
+      >
+        <svg class="icon" aria-hidden="true"><use href="#close" /></svg>
+      </button>
+      <img
+        class="dialog__image"
+        src="/src/images/body-large.jpg"
+        alt="Уход за телом VERDORA"
+        data-category-image
+      />
+      <h2 class="dialog__title" id="category-dialog-title" data-category-title>Тело и уход</h2>
+      <p class="dialog__copy" data-category-description></p>
+      <button class="button" type="button" data-close-dialog>ВЕРНУТЬСЯ К КАТЕГОРИЯМ</button>
+    </dialog>
+    <dialog class="dialog" id="privacy-dialog" aria-labelledby="privacy-title">
+      <button
+        class="icon-button dialog__close"
+        type="button"
+        aria-label="Закрыть информацию"
+        data-close-dialog
+      >
+        <svg class="icon" aria-hidden="true"><use href="#close" /></svg>
+      </button>
+      <h2 class="dialog__title" id="privacy-title">Конфиденциальность</h2>
+      <p class="dialog__copy">
+        Это демонстрационная страница VERDORA. Email проверяется только в браузере, не сохраняется и
+        не передаётся на сервер. Покупки и отправка рассылки пока недоступны.
+      </p>
+    </dialog>
+  </body>
+</html>

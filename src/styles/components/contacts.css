@@ -1,0 +1,229 @@
+.contacts {
+  text-align: center;
+  background: var(--color-green);
+  color: var(--color-white);
+  padding-block: 2.25rem 2rem;
+  padding-inline: 1.5rem;
+}
+.contacts__content {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-areas: 'newsletter' 'values' 'details';
+}
+.contacts__values {
+  grid-area: values;
+}
+.contacts__value {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.contacts__logo {
+  flex: 0 0 2.875rem;
+  inline-size: 2.875rem;
+  block-size: 2.875rem;
+}
+.contacts__value-title {
+  font-size: var(--text-small);
+  font-weight: 700;
+  line-height: 1.6;
+}
+.contacts__value-copy {
+  margin-block-start: 0.5rem;
+  font-size: var(--text-caption);
+  line-height: 1.5;
+}
+.contacts__motto {
+  display: none;
+  font-family: var(--font-display);
+  font-size: 1.5625rem;
+  line-height: 1.2;
+}
+.contacts__details {
+  grid-area: details;
+  font-size: var(--text-caption);
+}
+.contacts__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.contacts__social-title {
+  display: none;
+  font-size: var(--text-tiny);
+  font-weight: 700;
+}
+.contacts__address {
+  margin-block-start: 0.75rem;
+  font-style: normal;
+}
+.contacts__address a {
+  text-decoration: none;
+}
+.newsletter {
+  grid-area: newsletter;
+  min-inline-size: 0;
+}
+.newsletter__title {
+  font-family: var(--font-display);
+  font-size: 1.5625rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+.newsletter__description {
+  margin-block-start: 1.875rem;
+  font-size: var(--text-body);
+  line-height: 1.6;
+}
+.newsletter__desktop-break {
+  display: none;
+}
+.newsletter__form {
+  display: grid;
+  gap: 0.75rem;
+  margin-block-start: 2rem;
+}
+.newsletter__label {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  padding: 0;
+  margin: -1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+.newsletter__input {
+  inline-size: 100%;
+  min-inline-size: 0;
+  min-block-size: 3.25rem;
+  padding-block: 0.875rem;
+  padding-inline: 1rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  background: var(--color-field);
+  color: var(--color-white);
+  font-size: var(--text-body);
+  caret-color: var(--color-white);
+}
+.newsletter__input::placeholder {
+  color: var(--color-white);
+  opacity: 1;
+}
+.newsletter__note {
+  margin-block-start: 1.25rem;
+  font-size: var(--text-tiny);
+  line-height: 1.5;
+}
+.newsletter__status {
+  margin-block-start: 0.5rem;
+  font-size: var(--text-caption);
+}
+.newsletter__status:empty {
+  display: none;
+}
+@media (min-width: 40rem) {
+  .contacts__content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: 'newsletter newsletter' 'values details';
+  }
+  .contacts__values {
+    text-align: start;
+  }
+  .contacts__value {
+    flex-direction: row;
+    justify-content: start;
+  }
+  .contacts__details {
+    text-align: end;
+  }
+  .contacts__social {
+    justify-content: end;
+  }
+  .contacts {
+    padding-inline: 2rem;
+  }
+  .newsletter__title {
+    font-size: 2rem;
+  }
+  .newsletter__description {
+    margin-block-start: 1.25rem;
+  }
+  .newsletter__form {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+  .newsletter__submit {
+    min-inline-size: 10.875rem;
+  }
+  .newsletter__note br {
+    display: none;
+  }
+}
+@media (min-width: 64rem) {
+  .contacts {
+    text-align: start;
+    padding-block: 2.6875rem;
+    padding-inline: 4rem;
+  }
+  .contacts__content {
+    grid-template-areas: 'values newsletter details';
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr) minmax(0, 0.6fr);
+    gap: 4rem;
+  }
+  .contacts__logo {
+    flex-basis: 4.0625rem;
+    inline-size: 4.0625rem;
+    block-size: 4.0625rem;
+  }
+  .contacts__value {
+    align-items: start;
+    justify-content: start;
+    gap: 1.5rem;
+  }
+  .contacts__details {
+    text-align: start;
+  }
+  .contacts__social {
+    align-items: start;
+    justify-content: start;
+  }
+  .contacts__motto {
+    display: block;
+    margin-block-start: 3rem;
+  }
+  .contacts__social-title {
+    display: block;
+    margin-block-end: 0.5rem;
+  }
+  .contacts__social .icon {
+    inline-size: 2.125rem;
+    block-size: 2.125rem;
+    flex: 0 0 2.125rem;
+  }
+  .contacts__address {
+    margin-block-start: 2rem;
+    font-size: var(--text-small);
+  }
+  .newsletter__title {
+    font-size: 1.875rem;
+  }
+  .newsletter__description {
+    font-size: var(--text-caption);
+    margin-block-start: 1.25rem;
+  }
+  .newsletter__form {
+    margin-block-start: 2rem;
+  }
+  .newsletter__input {
+    font-size: var(--text-caption);
+  }
+  .newsletter__submit {
+    min-inline-size: 10.875rem;
+  }
+  .newsletter__note {
+    font-size: 0.6875rem;
+  }
+}

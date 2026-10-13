@@ -1,0 +1,28 @@
+:root {
+  --motion-hover-duration: 360ms;
+  --motion-underline-duration: 420ms;
+  --motion-hover-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --color-cream: #e9e3dc;
+  --color-paper: #f4f0ea;
+  --color-green: #4c5946;
+  --color-ink: #303c30;
+  --color-white: #f7f4ed;
+  --color-muted: #596451;
+  --color-field: #5a6753;
+  --color-line: #ffffff40;
+  --font-display: Prata, Georgia, serif;
+  --font-body: Lato, Arial, sans-serif;
+  --text-tiny: 0.75rem;
+  --text-small: 0.8125rem;
+  --text-caption: 0.875rem;
+  --text-body: 1rem;
+  --text-large: 1.1875rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --page-max: 100rem;
+  --radius: 0.1875rem;
+  --control-size: 3rem;
+}

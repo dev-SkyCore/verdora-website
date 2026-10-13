@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+button,
+input {
+  font: inherit;
+}
+img,
+svg {
+  display: block;
+  max-inline-size: 100%;
+}
+img {
+  block-size: auto;
+}
+ul {
+  padding: 0;
+}
+[hidden] {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 1rem;
+}
+body {
+  margin-block: 0;
+  max-inline-size: var(--page-max);
+  margin-inline: auto;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.6;
+}
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+button {
+  color: inherit;
+  cursor: pointer;
+}
+button,
+a,
+input {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+}
+::selection {
+  background: var(--color-green);
+  color: var(--color-white);
+}
+:where(section, article) {
+  scroll-margin-block-start: 1rem;
+}
+:where(h1, h2, h3, p, a) {
+  overflow-wrap: anywhere;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
