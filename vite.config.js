@@ -8,7 +8,7 @@ export default defineConfig(({ mode }) => {
   }
   const baseUrl = siteUrl.href.replace(/\/$/, '');
   return {
-    base: './',
+    base: '/verdora-website/',
     plugins: [
       {
         name: 'verdora-social-metadata',
